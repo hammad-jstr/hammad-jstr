@@ -1,0 +1,206 @@
+/* section 1 */
+.{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+position: sticky;top: 0;
+height: 10vh;
+display: flex;
+background-color: #fff;
+padding: 1px 15px;
+/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.logo h1{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 22px;
+font-weight: 500;
+line-height: 28px;
+color: rgb(95, 99, 104);
+}
+nav ul{
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+nav ul li{
+margin: 0 20px;
+padding-block: 20px;
+}
+
+nav ul li a{
+justify-content: space-between;
+text-decoration: none;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+color: rgb(0, 0, 0);
+}
+
+.icon{
+display: flex;
+gap: 25px;
+margin-left: auto;
+padding-block: 15px;
+}
+
+.tabs ul{
+margin: 30px;
+display: flex;
+gap: 5px;
+list-style: none;
+}
+.tabs ul li{
+border-radius: 15px;
+padding: 1px 11px;
+margin: 5px;
+width: fit-content;
+border: thin solid black;
+text-decoration: none;
+}
+.tabs ul li a{
+text-decoration: none;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 13px;
+font-weight: 500;
+color: rgb(95, 99, 104);
+}
+.tabs ul li a span{
+font-size: 16px;
+font-weight: 400;
+color: rgb(95, 99, 104);
+margin: 3px;
+}
+.tabs ul li:hover {
+background: rgba(95, 99, 104,0.09);
+}
+.container{
+
+gap: 10px;
+width: 90%;
+margin: auto;
+height: 55vh;
+background-color: black;
+border: thin solid black;
+border-radius: 15px;
+padding: 1px;
+}
+.avail{
+color: white;
+background-color: rgb(52,52,52);
+width: 10%;
+padding: 5px 10px;
+text-align: center;
+border-radius: 5px 0px;
+font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+color: rgb(255, 255, 255);
+}
+.head{
+display: flex;
+justify-content: space-between;
+padding: 4px 20px;
+}
+.head h1{
+    margin-bottom: 10px;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 36px;
+font-weight: 500;
+line-height: 44px;
+color: rgb(255, 255, 255);   
+}
+.head p{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+color: rgb(255, 255, 255);
+}
+.extra{
+display: flex;
+position: relative;bottom: 100px;
+
+}
+.extra .tyu{
+    border-radius: 20px;
+    padding: 10px;}
+.extra h3{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(255, 255, 255);
+margin-bottom: 5px;
+}
+.extra p{
+margin-top: 0;
+margin-bottom: z;
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(255, 255, 255);
+}
+.btn{
+position: relative;left: 150px;top: 30px;
+}
+.btn p{
+text-align: center;
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 11px;
+font-weight: 500;
+line-height: 16px;
+color: rgb(255, 255, 255);
+}
+.btn button{
+border: thin solid rgb(40,254,175);
+padding: 10px 19px;
+border-radius: 16px;
+background-color: rgb(40,254,175);
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+color: rgb(24, 24, 24);
+}
+.wer{
+    display: flex;
+position: relative;bottom: 100px;
+}
+.imgh{
+    display:;
+    overflow: hidden;
+}
+.games h1{
+margin-bottom: auto;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 22px;
+font-weight: 500;
+line-height: 28px;
+color: rgb(32, 33, 36);
+}
+.games{
+margin: 60px;
+padding: 0;
+}
+.games p{
+margin-top: auto; 
+font-family: Roboto, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+color: rgb(95, 99, 104);
+}
+/* header responsiveness */
+@media(max-width:838px){
+    .logo h1{white-space: nowrap;}
+    .logo nav ul{visibility: hidden;}
+    
+}
