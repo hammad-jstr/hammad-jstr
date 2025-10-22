@@ -1,17 +1,17 @@
-/* section 1 */
-.{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 .logo{
-position: sticky;top: 0;
+width: 95%;
+position: fixed;top: 0;
 height: 10vh;
 display: flex;
 background-color: #fff;
 padding: 1px 15px;
-/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+z-index: 3;
 }
 
 .logo h1{
@@ -44,26 +44,33 @@ color: rgb(0, 0, 0);
 
 .icon{
 display: flex;
-gap: 25px;
-margin-left: auto;
+gap: 10px;
+margin-left:auto;
 padding-block: 15px;
 }
-
+.tabs{
+  width: 80%;
+padding-top: 3%;
+align-items: center;
+}
 .tabs ul{
-margin: 30px;
+padding-top: 40px;
 display: flex;
 gap: 5px;
 list-style: none;
+margin:0% 7%;
 }
 .tabs ul li{
 border-radius: 15px;
-padding: 1px 11px;
+padding: 0% 1%;
 margin: 5px;
 width: fit-content;
 border: thin solid black;
 text-decoration: none;
 }
 .tabs ul li a{
+display: flex;
+align-items: center;
 text-decoration: none;
 font-family: "Google Sans", Roboto, Arial, sans-serif;
 font-size: 13px;
@@ -75,132 +82,396 @@ font-size: 16px;
 font-weight: 400;
 color: rgb(95, 99, 104);
 margin: 3px;
+
 }
 .tabs ul li:hover {
 background: rgba(95, 99, 104,0.09);
 }
-.container{
-
-gap: 10px;
-width: 90%;
-margin: auto;
-height: 55vh;
-background-color: black;
-border: thin solid black;
-border-radius: 15px;
-padding: 1px;
+.promo-section {
+width: 85%;
+background-color:rgb(1,1,1);
+color: #fff;
+margin: 0 auto;
+border-radius: 8px;
+position: relative;
+padding: 2%;
+display: flex;
+align-items: center;
+gap: 24px;
 }
-.avail{
-color: white;
-background-color: rgb(52,52,52);
-width: 10%;
-padding: 5px 10px;
-text-align: center;
-border-radius: 5px 0px;
+.section h2{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 22px;
+font-weight: 500;
+line-height: 20px;
+color: rgb(32, 33, 36);
+}
+.section p{
+font-family: Roboto, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+color: rgb(95, 99, 104);
+
+}
+.promo-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(45deg, rgba(0,188,212,0.1), rgba(255,87,34,0.1));
+z-index: 0;
+}
+.promo-badge {
 font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
 font-size: 16px;
 font-weight: 500;
-line-height: 24px;
+line-height: 15px;
 color: rgb(255, 255, 255);
+position: absolute;
+top:0px;
+left: 0;
+background-color: rgb(52,52,52);
+padding: 0px 8px;
+border-radius: 4px;
+font-size: 12px;
 }
-.head{
-display: flex;
+.promo-content {
+ display: flex;
+align-items: center;
 justify-content: space-between;
-padding: 4px 20px;
+flex: 1;
+background-color: rgb(1,1,1);
 }
-.head h1{
-    margin-bottom: 10px;
+.promo-text h1{
 font-family: "Google Sans", Roboto, Arial, sans-serif;
 font-size: 36px;
 font-weight: 500;
 line-height: 44px;
-color: rgb(255, 255, 255);   
+color: rgb(255, 255, 255);
 }
-.head p{
+.promo-text p {
 font-family: "Google Sans", Roboto, Arial, sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 32px;
 color: rgb(255, 255, 255);
 }
-.extra{
+.promo-app-info {
+  padding-block:5%;
 display: flex;
-position: relative;bottom: 100px;
-
+align-items: center;
+gap: 10px;
+justify-content: space-between;
 }
-.extra .tyu{
-    border-radius: 20px;
-    padding: 10px;}
-.extra h3{
-font-family: "Google Sans", Roboto, Arial, sans-serif;
-font-size: 18px;
-font-weight: 400;
-line-height: 24px;
-color: rgb(255, 255, 255);
-margin-bottom: 5px;
-}
-.extra p{
-margin-top: 0;
-margin-bottom: z;
-font-family: "Google Sans", Helvetica, Arial, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-color: rgb(255, 255, 255);
-}
-.btn{
-position: relative;left: 150px;top: 30px;
-}
-.btn p{
-text-align: center;
-font-family: "Google Sans", Helvetica, Arial, sans-serif;
-font-size: 11px;
-font-weight: 500;
-line-height: 16px;
-color: rgb(255, 255, 255);
-}
-.btn button{
-border: thin solid rgb(40,254,175);
-padding: 10px 19px;
-border-radius: 16px;
-background-color: rgb(40,254,175);
-font-family: "Google Sans", Roboto, Arial, sans-serif;
+.app-name {
 font-size: 14px;
 font-weight: 500;
+}
+.app-dev {
+font-size: 12px;
+opacity: 0.7;
+}
+.promo-buttons {
+padding-inline: 60px;
+gap: 8px;
+align-items: center;
+}
+.btn {
+padding: 5px 20px;
+border: none;
+border-radius: 4px;
+font-weight: 500;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+.btn:hover{
+background-color: black;
+}
+.btn-primary {
+text-align: center;
+border-radius: 15px;
+background: rgb(40,254,175);
+color:black;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 14px;
+font-weight: 600;
 line-height: 16px;
 color: rgb(24, 24, 24);
+display: block;
+width: 190px;
 }
-.wer{
-    display: flex;
-position: relative;bottom: 100px;
+
+.in-app {
+color: rgba(255,255,255,0.7);
+font-size: 12px;
+margin: 40px;
 }
-.imgh{
-    display:;
-    overflow: hidden;
+.section {
+padding: 2%;
+max-width: 1200px;
+margin: 0 auto;
+
 }
-.games h1{
-margin-bottom: auto;
-font-family: "Google Sans", Roboto, Arial, sans-serif;
-font-size: 22px;
+.section-title {
+font-size: 24px;
 font-weight: 500;
-line-height: 28px;
+margin-bottom: 16px;
+color: #202124;
+}
+.featured-grid {
+overflow:scroll;
+display: flex;
+flex-direction: row;
+gap: 25px;
+scrollbar-width: none;
+}
+.featured-card:hover{
+background-color:rgb(245,245,245);
+}
+.featured-card {
+text-align: center;
+width: 100%;
+}
+.featured-card img {
+width: 190px;
+border-radius: 40px;
+}
+.featured-title {
+font-family: Roboto, Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
 color: rgb(32, 33, 36);
 }
-.games{
-margin: 60px;
-padding: 0;
+.featured-rating {
+font-size: 10px;
+color: #5f6368;
 }
-.games p{
-margin-top: auto; 
-font-family: Roboto, Arial, sans-serif;
+.pc-section {
+display:flex;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 42px;
+margin-bottom: 32px;
+scrollbar-width: none;
+}
+.pc-card {
+width: 120%;
+background: #fff;
+border-radius: 8px;
+
+}
+
+.pc-info {
+padding: 12px;
+}
+.pc-title {
+font-size: 14px;
+font-weight: 500;
+margin-bottom: 4px;
+}
+.pc-rating {
 font-size: 12px;
+color: #5f6368;
+}
+
+footer{
+
+background-color: rgb(255,255,255);
+}
+.home{
+margin: auto;
+display: flex;
+justify-content: flex-start;
+}
+.footer-content{
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 14px;
 font-weight: 400;
-line-height: 16px;
+line-height: 32px;
+color: rgb(95, 99, 104);
+text-align: center;
+padding: 4% 6%;
+}
+.footer-content h3{
+text-align: start;
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 32px;
 color: rgb(95, 99, 104);
 }
-/* header responsiveness */
-@media(max-width:838px){
-    .logo h1{white-space: nowrap;}
-    .logo nav ul{visibility: hidden;}
-    
+.footer-content ul li{
+text-align: start;
+list-style: none;
 }
+.footer-content ul li a{
+text-decoration: none;
+color: rgb(95, 99, 104);
+}
+.footer-content ul li a:hover{
+color: rgb(1,135,95);
+}
+footer hr{
+margin: 50px 85px;
+color: rgb(232,234,237);
+}
+.bottom{
+display:flex;
+justify-content: space-between;
+color: rgb(255, 255, 255);
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+padding: 0% 6%;
+}
+.bottom h3{
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+justify-content: end;
+}
+.bottom ul{
+display: flex;
+gap: 20px;
+}
+.bottom ul li{
+list-style: none;
+}
+.bottom ul li a{
+text-decoration: none;
+color: rgb(95, 99, 104);
+}
+.bottom ul li a:hover{
+color: rgb(1,135,95);
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+}
+.end{
+height: 6vh;
+width: 100%;
+display: flex;
+gap: 20px;
+justify-content: center;
+visibility: hidden;
+}
+.end a{
+text-decoration: none;
+color: rgb(95,99,104);
+font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+}
+@media (max-width:1400px) {
+.logo {
+width: 100%;
+height: 64px;
+align-items: center;
+display: flex;
+}
+.tabs{
+align-items: center;
+display: flex;
+position: relative;
+margin: 0 16px;
+}
+.app-details{
+font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: .00625em;
+        line-height: 1.5rem;
+        white-space: nowrap;
+    }
+}
+.promo-badge{
+letter-spacing: .0178571429em;
+line-height: 1.25rem;
+font-weight: 500;
+padding: 6px 12px;
+}
+.promo-text h1{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+line-height: 2.25rem;
+font-size: 1.75rem;
+letter-spacing: 0;
+font-weight: 500;
+}
+.promo-text p{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+line-height: 1.5rem;
+font-size: 1.125rem;
+letter-spacing: 0;
+font-weight: 400;
+margin-top: 10px;
+}
+.app-icon img{
+height: 48px;
+width: 48px;
+}
+.app-name{
+font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .00625em;
+  line-height: 1.5rem;
+}
+.app-dev{
+font-size: .875rem;
+  font-weight: 400;
+  letter-spacing: .0142857143em;
+  line-height: 1.25rem;
+}
+.app-details{
+align-items: center;
+display:block
+}
+.promo-image img{
+height: auto;
+width: 100%;
+}
+.nav-links{
+display: none;
+}
+
+@media (max-width:805px){
+.logo nav{visibility: hidden;}
+.logo{width: 100%;}
+.promo-section{
+flex-direction: column-reverse;
+width: fit-content;
+}
+.home{
+visibility: hidden;
+padding-top:100%;
+display: block;
+}
+.bottom{
+visibility: hidden;
+display: block;
+
+}
+.end{visibility: initial;
+position: fixed;bottom: 0px;}
+.hr{visibility: hidden;}
+
+.featured-card img{
+width:160px;
+justify-content: flex-start;
+}
+
+}
+@media (max-width:600px) {
+  .featured-grid{
+ display: block;
+  }
+  }

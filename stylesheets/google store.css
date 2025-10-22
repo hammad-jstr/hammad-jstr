@@ -1,0 +1,137 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.header {
+position: fixed;top: 0px;
+width: 100%;
+height: 8vh;
+background-color: white;
+z-index:0 ;
+}
+.head{
+margin: 0px 0px;
+background-image:url(../multimedia/images/region_picker_md.png) ;
+background-repeat: no-repeat;
+background-size:contain;
+ display: flex;
+background-color: rgb(246,245,253);
+background-position: right 40px;
+width: 100%;
+
+box-shadow: 0px 10px 10px rgb(231,231,231);
+
+}
+.feg{
+
+  padding: 150px 0px 50px 30px;
+}
+.head h1{
+width: 60%;
+font-family: "Google Sans Display", "Google Sans", Roboto, Arial, sans-serif;
+font-size: 60px;
+font-weight: 700;
+line-height: 68px;
+color: rgb(25, 28, 29);
+}
+.head p{
+padding: 0px 10px;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+color: rgb(25, 28, 29);
+}
+li{
+padding: 10px 0px;
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+color: rgb(25, 28, 29);
+}
+
+.country{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+color: rgb(25, 28, 29);
+}
+.lang{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 14px;
+font-weight: 200;
+line-height: 20px;
+color: rgb(25, 28, 29);
+}
+.main h1{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 40px;
+font-weight: 600;
+line-height: 48px;
+color: rgb(25, 28, 29);
+}
+
+.main{
+margin: 20px 60px;
+display: flex;
+justify-content: space-between;
+}
+li:hover{
+background-color:rgba(128, 128, 128, 0.582);
+}
+
+@media (max-width:1000px) {
+  main{    margin: 16px auto 16px 16px;
+    max-width: 25%;
+}
+.main h1{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+color: rgb(25, 28, 29);
+}
+
+.head h1 {
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 30px;
+font-weight: 400;
+line-height: normal;
+color: rgb(25, 28, 29);
+}
+}
+  
+
+
+@media (max-width: 600px) { 
+.main{
+display: flex;
+flex-flow: row wrap;
+margin: 24px auto 0 16px;
+max-width: 100%;
+}
+.head{
+width: 100%;
+text-align: start;
+background-image:none;
+min-height: 200px;
+padding-bottom: 0;
+padding-top: 0;
+
+}
+.head h1{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.head p{
+  font-size: 15px;
+  font-weight: 500;}
+ }

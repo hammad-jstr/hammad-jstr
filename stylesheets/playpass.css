@@ -1,0 +1,232 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.gp-header {
+width: 100%;
+z-index: ;
+position: fixed;top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 24px;
+border-bottom: 1px solid #ddd;
+background-color: white;
+}
+
+.left {
+display: flex;
+align-items: center;
+}
+
+.logo {
+height: 32px;
+margin-right: 20px;
+}
+.nav-links{
+padding-inline: 20px;
+}
+.nav-links a {
+margin-right: 20px;
+text-decoration: none;
+color: #333;
+font-weight: 500;
+}
+
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+.right {
+display: flex;
+align-items: end;
+gap: 15px;
+background-color: white ;
+}
+.right button{
+  background-color: white;
+  border: none;
+}
+
+.gpp img {
+padding-inline: 40%;
+}
+.ppass{
+padding-top: 50px;
+overflow: hidden;
+margin: auto;
+}
+.ghy img{
+width: 100%;
+}
+.ppass h1{
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 48px;
+font-weight: 500;
+line-height: 56px;
+color: rgb(32, 33, 36);
+margin-block: 40px;
+}
+.ppass button{
+border: thin solid rgb(1,135,95);
+border-radius: 10px;
+padding: 10px 35px;
+background-color: rgb(1,135,95);
+font-family: "Google Sans", Roboto, Arial, sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 16px;
+color: rgb(255, 255, 255);
+}
+.ppass button:hover{
+    background-color: rgb(2, 71, 51);
+}
+.ava{
+width: 100%;
+text-align: center;
+}
+.ppass button a{
+text-decoration: none;
+color: white;
+}
+footer{
+
+background-color: rgb(255,255,255);
+}
+.home{
+margin: auto;
+display: flex;
+justify-content: flex-start;
+}
+.footer-content{
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 32px;
+color: rgb(95, 99, 104);
+text-align: center;
+padding: 4% 6%;
+}
+.footer-content h3{
+text-align: start;
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 32px;
+color: rgb(95, 99, 104);
+}
+.footer-content ul li{
+text-align: start;
+list-style: none;
+}
+.footer-content ul li a{
+text-decoration: none;
+color: rgb(95, 99, 104);
+}
+.footer-content ul li a:hover{
+color: rgb(1,135,95);
+}
+footer hr{
+margin: 50px 85px;
+color: rgb(232,234,237);
+}
+.bottom{
+display:flex;
+justify-content: space-between;
+color: rgb(255, 255, 255);
+/* margin: 0; */
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+padding: 0% 6%;
+}
+.bottom h3{
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+justify-content: end;
+  }
+.bottom ul{
+display: flex;
+gap: 20px;
+  }
+.bottom ul li{
+list-style: none;
+}
+.bottom ul li a{
+text-decoration: none;
+color: rgb(95, 99, 104);
+}
+.bottom ul li a:hover{
+color: rgb(1,135,95);
+font-family: "Google Sans", Helvetica, Arial, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 48px;
+color: rgb(95, 99, 104);
+}
+.end{
+height: 6vh;
+width: 100%;
+display: flex;
+gap: 20px;
+justify-content: center;
+visibility: hidden;
+}
+.end a{
+text-decoration: none;
+color: rgb(95,99,104);
+font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+;
+}
+
+
+
+/* responsiveness */
+@media (max-width:840px) {
+.gp-header{
+height: 64px;
+align-items: center;
+display: flex;   
+width: 100%;
+}
+.ghy img{
+width: 100%;
+height: auto;
+}
+.gpp img{
+width: 100%;
+height: auto;
+}
+.ppass h1{
+font-size: 40px;
+}
+.nav-links{
+  display: none;
+}
+.home{visibility: hidden;}
+.bottom{visibility: hidden;
+  display: block;
+}
+.end{visibility: initial;
+position: fixed;bottom: 0px;}
+.hr{visibility: hidden;}
+}
+@media (max-width:600px) {
+  .ppass h1{
+font-size: 25px;
+font-weight: 500;
+}
+.ava button{
+  white-space: nowrap;
+}
+}
